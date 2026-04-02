@@ -1,0 +1,110 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6vw;
+  height: 110px;
+  overflow: visible;
+
+  background: var(--charcoal);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.logo {
+  height: 140px;
+  transform: translateY(-8px);
+}
+
+.wordmark {
+  height: 135px;
+  transform: translateY(-8px);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hamburger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -320px;
+
+  width: 320px;
+  height: 100vh;
+
+  background: #111;
+
+  padding: 3rem 2rem;
+
+  transition: right 0.4s ease;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.sidebar a {
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.close {
+  align-self: flex-end;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    height: 86px;
+    padding: 0 4vw;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 78px;
+    transform: translateY(0);
+  }
+
+  .wordmark {
+    height: 64px;
+    transform: translateY(0);
+  }
+
+  .header-right .cta {
+    padding: 0.55rem 1rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+  }
+}

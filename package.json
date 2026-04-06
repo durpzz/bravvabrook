@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "commonjs",
+
+  "engines": {
+    "node": "20.x"
+  },
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",

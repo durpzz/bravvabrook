@@ -16,12 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "swiper": "^12.1.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.7.0",
+    "swiper": "^12.1.2",
     "vite": "^5.4.21"
   }
 }

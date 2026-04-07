@@ -4,22 +4,18 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   
-  // Build config
   build: {
     target: 'es2015',
     minify: 'esbuild',
     cssCodeSplit: true,
-    // Isso ignora warnings de CSS durante minify
     rollupOptions: {
       onwarn(warning, warn) {
-        // Ignora avisos de CSS aninhado de dependências
+        // Ignora warnings de CSS aninhado de dependências externas
         if (warning.code === 'CSS_NESTING_INVALID') return;
-        // Mantém os outros warnings normais
-        warn(warning);
+        warn(warning); // mantém outros warnings normais
       },
     },
   },
 
-  // Mostra logs sem travar o build
-  logLevel: 'info',
+  logLevel: 'info', // mostra warnings mas não trava build
 });

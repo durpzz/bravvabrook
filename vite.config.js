@@ -1,9 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  
+
   build: {
     target: 'es2015',
     minify: 'esbuild',
@@ -17,5 +18,5 @@ export default defineConfig({
     },
   },
 
-  logLevel: 'info', // mostra warnings mas não trava build
+  logLevel: 'info', // mostra warnings sem quebrar o build
 });

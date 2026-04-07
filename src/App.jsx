@@ -12,7 +12,7 @@ import kitImg from "./assets/produtos/kit.png";
 import modeloImg from "./assets/modelo/modelo.jpeg";
 import modelo3Img from "./assets/modelo/modelo3.png";
 import nutritionImg from "./assets/diversos/beneficios.png";
-import cuidadosImg from "./assets/diversos/cuidados.png";
+import cuidadosImg from "./assets/diversos/cuid.png";
 import pilula1Img from "./assets/diversos/pilula1.png";
 import pilula2Img from "./assets/diversos/pilula2.png";
 

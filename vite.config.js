@@ -18,5 +18,5 @@ export default defineConfig({
     },
   },
 
-  logLevel: 'info', // mostra warnings sem quebrar o build
+  logLevel: 'info', // mostra warnings sem travar o build
 });

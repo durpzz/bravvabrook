@@ -11,6 +11,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "installConfig": {
+    "legacy-peer-deps": true
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -24,5 +27,3 @@
     "vite": "4.5.0"
   }
 }
-
-
